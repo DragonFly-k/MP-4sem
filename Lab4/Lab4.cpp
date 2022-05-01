@@ -13,7 +13,7 @@
 
 void Task1_2() {
 	srand(time(NULL));
-	char abc[25];
+	/*char abc[25];
 	char s1[300], s2[250];
 
 	for (int i = 97, n = 0; i <= 122; ++i, ++n)
@@ -37,8 +37,9 @@ void Task1_2() {
 			std::cout << std::endl;
 		std::cout << s2[i];
 	}
-	std::cout << std::endl;
-
+	std::cout << std::endl;*/
+	char s1[4] = "ель";
+	char s2[6] = "дрель";
 	clock_t t1 = 0, t2 = 0, t3 = 0, t4 = 0;
 	int lx = sizeof(s1);
 	int ly = sizeof(s2);

@@ -26,7 +26,7 @@ int OptimalM(int i, int j, int n, const int c[], int* s)
 #undef OPTIMALM_S             
 };
 
-//    расстановка скобок (динамическое программирование)  
+// расстановка скобок (динамическое программирование)  
 int OptimalMD(int n, const int c[], int* s)
 {
 #define OPTIMALM_S(x1,x2)  (s[(x1-1)*n+x2-1]) 
@@ -45,7 +45,8 @@ int OptimalMD(int n, const int c[], int* s)
 				q = OPTIMALM_M(i, k) + OPTIMALM_M(k + 1, j) + c[i - 1] * c[k] * c[j];
 				if (q < OPTIMALM_M(i, j))
 				{
-					OPTIMALM_M(i, j) = q;  OPTIMALM_S(i, j) = k;
+					OPTIMALM_M(i, j) = q; 
+					OPTIMALM_S(i, j) = k;
 				}
 			}
 		}
