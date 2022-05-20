@@ -66,7 +66,7 @@ void Task1_2() {
 void Task5() {
 	srand(time(NULL));
 	clock_t t1 = 0, t2 = 0, t3 = 0, t4 = 0;
-	int Mc[N + 1] = { 100, 15, 20, 43, 70, 40, 71 }, Ms[N][N], r = 0, rd = 0;
+	int Mc[N + 1] = { 8, 11, 19, 22, 29, 39, 50}, Ms[N][N], r = 0, rd = 0;
 	memset(Ms, 0, sizeof(int) * N * N);
 	t1 = clock();
 	r = OptimalM(1, N, N, Mc, OPTIMALM_PARM(Ms));
@@ -109,8 +109,8 @@ void Task5() {
 int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "rus");
-	Task1_2();
-	//Task5();
+	//Task1_2();
+	Task5();
 	system("pause");
 	return 0;
 }
